@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const  bookInput = document.querySelector("#new-item-form");
   bookInput.addEventListener("submit", handleInput);
 
+
 });
 
 const handleInput = function(event) {
@@ -14,4 +15,6 @@ const handleInput = function(event) {
   const li = document.createElement("li")
   li.textContent = `Title: ${title} Author: ${author} Category:${category}` 
   readingList.append(li)
+  
+
 }
