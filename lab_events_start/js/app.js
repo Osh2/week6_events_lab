@@ -15,6 +15,6 @@ const handleInput = function(event) {
   const li = document.createElement("li")
   li.textContent = `Title: ${title} Author: ${author} Category:${category}` 
   readingList.append(li)
-  
+  event.target.reset()
 
 }
